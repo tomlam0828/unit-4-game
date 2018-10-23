@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+        <title>CrystalsCollector</title>
+        <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <script src="assets/javascript/game.js"></script>
+        
+    <body>
+        
+        <div class="row">
+            <div class="col-md-5 border">
+                <strong>CrystalsCollector!</strong>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 border">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4 border">
+                <h1 id="display-number"> 0</h1>
+            </div>
+            <br><br><br>
+            <div class="col-md-3 border">
+                <p>Wins: <span id="user-wins">0</span></p>
+                <p>Losses: <span id="user-losses">0</span></p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md">
+                <img id="ruby" src="https://png.pngtree.com/element_origin_min_pic/16/11/08/02f34ff45d33e8f2414696c1db481162.jpg" alt="ruby">
+                <img id="diamond"
+                src="https://www.tiffany.com/shared/images/engagement/flawless-diamond.png" alt="diamond">
+                <img id="yellow-stone"
+                src="https://us.123rf.com/450wm/keltmd/keltmd1612/keltmd161200129/68723116-cartoon-realistic-gems-jewels-diamond-brilliant-vector-gemstone-and-crystal-precious-glass-elements-.jpg?ver=6" alt="yello-stone">
+                <img id="emerald" src="https://ubisafe.org/images/emeraud-clipart-2.png" alt="emerald">
+            </div>
+            </div>
+            <br><br>
+            <h2>Your total score is: <span id="total-score">0</span></h2>
+    </body>
+    </html>
