@@ -1,6 +1,5 @@
 $(document).ready(function () {
     var random = Math.floor(Math.random() * 101 + 1);
-
     var num1 = Math.floor(Math.random() * 10 + 1);
     var num2 = Math.floor(Math.random() * 10 + 1);
     var num3 = Math.floor(Math.random() * 10 + 1);
@@ -36,8 +35,7 @@ $(document).ready(function () {
         num4 = Math.floor(Math.random() * 10 + 1);
         userTotal = 0;
         $("#display-number").text(random);
-        $("#total-score").text(userTotal);
-        
+        $("#total-score").text(userTotal);     
     }
 
     $("#ruby").on("click", function () {
@@ -49,6 +47,7 @@ $(document).ready(function () {
             lose();
         }
     })
+    
     $("#diamond").on("click", function () {
         userTotal = userTotal + num2;
         $("#total-score").text(userTotal);
@@ -58,6 +57,7 @@ $(document).ready(function () {
             lose();
         }
     })
+
     $("#yellow-stone").on("click", function () {
         userTotal = userTotal + num3;
         $("#total-score").text(userTotal);
@@ -67,6 +67,7 @@ $(document).ready(function () {
             lose();
         }
     })
+
     $("#emerald").on("click", function () {
         userTotal = userTotal + num4;
         $("#total-score").text(userTotal);
@@ -76,4 +77,4 @@ $(document).ready(function () {
             lose();
         }
     })
-    })
+})
